@@ -10,6 +10,8 @@ var usersRouter = require('./routes/users');
 /* --- V2: Adding Web Pages --- */
 var aboutRouter = require('./routes/about');
 
+var loggedinRouter = require('./routes/loggedin');
+
 var app = express();
 
 // view engine setup
@@ -27,6 +29,7 @@ app.use('/users', usersRouter);
 
 /* --- V2: Adding Web Pages --- */
 app.use('/about', aboutRouter);
+app.use('/loggedin', loggedinRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
