@@ -3,7 +3,11 @@
   <head>
   	<style>
 body {
-  background-color: #D8E3E7;
+ background-color: #D8E3E7;
+  /*background-image: url("../images/secondpage.png");*/
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: cover;
 }
 p{
 text-align: center;}
@@ -76,14 +80,6 @@ p.three{
   border: 1px solid #73AD21;
 }
 
-a{
-  position: absolute;
-  top: 500px;
-  left: 1080px; 
-  width: 542px;
-  height: 654px;
-  border: 0px solid #73AD21;
-}
 
 input.username {
   width: 10%;
@@ -107,10 +103,13 @@ input.password{
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <img class="two" src='../images/accoms.jpg'><br>
+    <a href="/about" class="btn btn-primary">login
+        <img class="two" src='../images/accoms.jpg'><br>
+    </a>
     <img class="three" src='../images/work.jpg'><br>
     <img class="one" src='../images/student.jpg'><br>
+    
     <br /><br />
-    <a href="/about" id = "Register" class="btn btn-primary">login</a>
+
   </body>
 </html>
