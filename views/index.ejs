@@ -14,7 +14,7 @@ img.one {
   margin-right: 213px;
   width: 50%;*/
   position: absolute;
-  top: 0px;
+  top: 213px;
   left: 80px; 
   width: 542px;
   height: 654px;
@@ -23,12 +23,50 @@ img.one {
 
 p.one {
   border-style: solid;
-  margin: auto;
+  position: fixed;
+  top: 350px;
+  left: 700px; 
   border-width: 2px;
   text-align: center;
-  height: 100px;
-  width: 500px;
+  height: 397px;
+  width: 727px;
   background-color: powderblue;
+}
+
+p.two{
+  position: absolute;
+  top: 384px;
+  left: 750px;
+}
+p.three{
+  position: absolute;
+  top: 474px;
+  left: 750px;
+}
+
+a{
+  position: absolute;
+  top: 500px;
+  left: 1080px; 
+  width: 542px;
+  height: 654px;
+  border: 0px solid #73AD21;
+}
+
+input.username {
+  width: 10%;
+  position: absolute;
+  top: 397px;
+  left: 832px; 
+  border: 0px solid #73AD21;
+}
+
+input.password{
+  width: 10%;
+  position: absolute;
+  top: 487px;
+  left: 832px; 
+  border: 0px solid #73AD21;
 }
 </style>
     <title><%= title %></title>
@@ -37,9 +75,13 @@ p.one {
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <p class="one">Some text.</p>
+    <p class="one">Hi please log on!</p>
+    <p class="two">Username:</p>
+    <p class="three">Password:</p>
     <img class="one" src='../images/singpass_qr_code.png'><br>
     <br /><br />
     <a href="/about" id = "Register" class="btn btn-primary">login</a>
+    <input class="username" stuff /input>
+    <input class="password" /input>
   </body>
 </html>
