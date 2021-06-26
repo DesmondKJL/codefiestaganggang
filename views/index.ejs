@@ -8,6 +8,15 @@ body {
 p{
 text-align: center;}
 
+img.one {
+  position: absolute;
+  top: 213px;
+  left: 80px;
+  width: 542px;
+  height: 654px;
+  border: 0px solid #73AD21;
+}
+
 p.one {
   border-style: solid;
   margin: auto;
@@ -25,7 +34,8 @@ p.one {
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <p class="one">Some text.</p>
+    <img class="one" src='../images/singpass_qr_code.png' width="542" height="654"><br>
     <br /><br />
-    <a href="/about" id = "Register" class="btn btn-primary">Admin</a>
+    <a href="/about" id = "Register" class="btn btn-primary">login</a>
   </body>
 </html>
